@@ -1,0 +1,25 @@
+### creating new user
+POST http://localhost:4000/employee-api/employee
+Content-Type: application/json
+
+{
+    "name":"sunny",
+    "email":"sunny@gmail.com",
+    "mobile":999999999,
+    "designation":"HR",
+    "companyName":"deloitte"
+}
+
+###update employee
+PUT http://localhost:4000/employee-api/employees/69ca19d79367285cf804d725
+Content-Type: application/json
+
+{
+    "companyName":"Microsoft"   
+}
+
+###read all users
+GET http://localhost:4000/employee-api/employees
+
+###
+DELETE http://localhost:4000/employee-api/employee/69ca19d79367285cf804d725
